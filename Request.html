@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhotomaticsID</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">    
+</head>
+
+<body style="background-color:rgb(255, 255, 255); padding-top: 70px; padding-bottom: 70px;">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f6c36d;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Logo.webp" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              </a>
+            <a class="navbar-brand" href="Homepage.html">Photomatic's Homepage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Location.html">Location</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #eecc92;">
+                            <li><a class="dropdown-item" href="Review.html">Our Review</a></li>
+                            <li><a class="dropdown-item" href="Contact.html">Contact Us</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="Request.html">Request Resent Soft Copy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">2025.nlp</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Form -->
+    <div id="FormResent" class="container">
+        <h1 class="text-center"><i>Request Your Soft Copy Here</i></h1>
+        <hr>
+        <p class="text-center">
+            Took a photo at our booth and want the digital version? Simply fill out the form below with your details, and we'll send the soft copy of your photo to your email or preferred contact.</p><br>
+    
+        <div class="row">
+            <!-- Form Mandiri -->
+            <div class="col-md-6">
+                <h4 class="text-center"><i>- Formulir Mandiri -</i></h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="namaInput" class="form-label"><b>Nama</b></label>
+                        <input type="text" class="form-control" id="namaInput" placeholder="Your Answer" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="tanggalInput" class="form-label"><b>Tanggal Foto</b></label>
+                        <input type="date" class="form-control" id="tanggalInput" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleSelect" class="form-label"><b>Cabang Photomatics</b></label>
+                        <select class="form-select" id="cabangSelect" required>
+                          <option value="" selected disabled>Pilih Cabang</option>
+                          <option value="1">Photomatics Wonderland (Jakarta)</option>
+                          <option value="2">Trans Studio Mall Cibubur (Jakarta)</option>
+                          <option value="3">SMYD (Pallete) - Blok M (Jakarta)</option>
+                          <option value="4">Warnoes Margonda (Depok)</option>
+                          <option value="5">Kopitagram - Cinere (Depok)</option>
+                          <option value="6">Pasar Tunjungan (Surabaya)</option>
+                          <option value="7">Ada Apa Dengan Kopi (AADK) - Wiyung (Surabaya)</option>
+                          <option value="8">Female Daily Studio (Surabaya)</option>
+                        </select>
+                      </div>
+                      
+                    <div class="mb-3">
+                        <label for="jenisSelect" class="form-label"><b>Jenis Box Foto</b></label>
+                        <select class="form-select" id="jenisSelect" required>
+                            <option value="" selected disabled>Pilih Jenis</option>
+                            <option value="1">Box Biasa</option>
+                            <option value="2">Curtain</option>
+                            <option value="3">Ontop</option>
+                            <option value="4">Wide</option>
+                          </select>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label"><b>Email (Untuk Pengiriman Soft File)</b></label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Pastikan Email Tidak Full" required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="BuktiInput" class="form-label"><b>Bukti Foto Strip</b></label>
+                        <input class="form-control" type="file" id="BuktiInput" required>
+                    </div>
+    
+                    <button type="submit" class="btn" style="background-color: #992e14; color: white;">Submit</button>
+                </form>
+            </div>
+    
+            <!-- Form Event -->
+            <div class="col-md-6">
+                <h4 class="text-center"><i>- Formulir Event -</i></h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="eventInputE" class="form-label"><b>Nama Event</b></label>
+                        <input type="text" class="form-control" id="eventInputE" placeholder="Your Answer" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="tanggalInputE" class="form-label"><b>Tanggal Event</b></label>
+                        <input type="date" class="form-control" id="tanggalInputE" required>
+                      </div>
+    
+                    <div class="mb-3">
+                        <label for="lokasiInputE" class="form-label"><b>Lokasi Box Foto</b></label>
+                        <input type="text" class="form-control" id="lokasiInputE" placeholder="Your Answer" required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="emailInputE" class="form-label"><b>Email (Untuk Pengiriman Soft File)</b></label>
+                        <input type="email" class="form-control" id="emailInputE" placeholder="Pastikan Email Tidak Full" required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="BuktiInputE" class="form-label"><b>Bukti Foto Strip</b></label>
+                        <input class="form-control" type="file" id="BuktiInputE" required>
+                    </div>
+    
+                    <button type="submit" class="btn" style="background-color: #992e14; color: white;">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Footer -->
+    <nav class="navbar fixed-bottom" style="background-color: #f6c36d;">
+        <div class="container-fluid justify-content-center">
+          <span class="navbar-text text-center">
+            @2025 Copyright:NabilahLiandaP
+          </span>
+        </div>
+      </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

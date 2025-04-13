@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhotomaticsID</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #ffffff;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            overflow-x: hidden;
+        }
+        .img-fixed {
+        width: 100%;
+        height: 300px; 
+        object-fit: cover;
+        border-radius: 10px; 
+        }
+    </style>
+</head>
+
+<body style="background-color: #ffffff; padding-top: 70px; padding-bottom: 70px;">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f6c36d;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Logo.webp" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              </a>
+            <a class="navbar-brand" href="Homepage.html">Photomatic's Homepage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Location.html">Location</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #eecc92;">
+                            <li><a class="dropdown-item" href="Review.html">Our Review</a></li>
+                            <li><a class="dropdown-item" href="Contact.html">Contact Us</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="Request.html">Request Resent Soft Copy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">2025.nlp</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Headline -->
+     <div id="Lokasi">
+        <h1 class="text-center"><i>Find Us At Here!</i></h1><hr>
+        <p class="text-center">Explore all our available branches below, use the interactive map to find the Photomatics location nearest to you!<br> <b>Please note that branch availability may change from time to time</b>, so be sure to check back for the latest updates.</p>
+        
+        <!-- Split Foto -->
+        <div class="row">
+            <div class="col-3">
+                <img src="tempat1.jfif" class="img-fluid img-fixed" alt="tempat1"><br><br>
+                <img src="tempat2.jfif" class="img-fluid img-fixed" alt="tempat2">
+            </div>
+            
+            <!-- List Lokasi -->
+            <div class="col-6 text-center">
+                <h3>- Jakarta City -</h3>
+                <div class="list-group">
+                    <a href="https://www.google.com/maps/place/Photomatics+Wonderland/@-6.2439416,106.7994565,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f15c504bec21:0x845ab3b3bdd1403c!8m2!3d-6.2439416!4d106.7994565!16s%2Fg%2F11kr8vgx0m?entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoASAFQAw%3D%3D" class="list-group-item list-group-item-action list-group-item-warning">Photomatics Wonderland</a>
+                    <a href="https://www.google.com/maps/place/Trans+Studio+Mall+Cibubur/@-6.3756707,106.9019455,17z/data=!3m2!4b1!5s0x2e69eca8ec03ede7:0x65e57f7a2ae51202!4m6!3m5!1s0x2e69ed4515088551:0x5e89bf86511886e2!8m2!3d-6.3756707!4d106.9019455!16s%2Fg%2F11fjv4jx4z?entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoASAFQAw%3D%3D" class="list-group-item list-group-item-action list-group-item-warning">Trans Studio Mall Cibubur</a>
+                    <a href="https://www.google.com/maps/place/Blok+M+Square/@-6.244593,106.800649,17z/data=!3m2!4b1!5s0x2e69f16ea3e2e873:0xba51b6adb5e3a2e2!4m6!3m5!1s0x2e69f1ebfd6daa4d:0x8f10b22d03d7c9db!8m2!3d-6.244593!4d106.800649!16s%2Fm%2F04jnzbm?entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoASAFQAw%3D%3D" class="list-group-item list-group-item-action list-group-item-warning">SMYD (Palette) - Blok M</a>
+                </div>
+                <br><h3>- Depok City -</h3>
+                <div class="list-group">
+                    <a href="https://www.google.com/maps/place/Warnoes+Margonda/@-6.3703834,106.8334694,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69ed23048126d1:0x83a583d9201e9024!8m2!3d-6.3703834!4d106.8360443!16s%2Fg%2F11r_cjq4fd?utm_campaign=tt-sps&coh=209934&entry=tts" class="list-group-item list-group-item-action list-group-item-warning">Warnoes Margonda</a>
+                    <a href="https://www.google.com/maps/place/Kopitagram+-+Cinere/@-6.349652,106.7785577,15z/data=!4m6!3m5!1s0x2e69efa9aed6e5cf:0x33ddf6f80cbd3fda!8m2!3d-6.349652!4d106.7785577!16s%2Fg%2F11nmjgt9j4?sa=X&ved=2ahUKEwiGt9_alKL_AhVzg2MGHa15DtoQ_BJ6BAhgEAg&entry=tts&shorturl=1" class="list-group-item list-group-item-action list-group-item-warning">Kopitagram - Cinere</a>
+                </div>
+                <br><h3>- Surabaya City -</h3>
+                <div class="list-group">
+                    <a href="https://www.google.com/maps/place/Pasar+Tunjungan/@-7.2603564,112.7390693,17z/data=!3m2!4b1!5s0x2dd7f95d93ab591d:0x18fe99027e827bc9!4m6!3m5!1s0x2dd7f992d666ad47:0x8c8dc61ceda516af!8m2!3d-7.2603564!4d112.7390693!16s%2Fg%2F11thpg0bh5?entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoASAFQAw%3D%3D" class="list-group-item list-group-item-action list-group-item-warning">Pasar Tunjungan Surabaya</a>
+                    <a href="https://www.google.com/maps/place/Ada+Apa+Dengan+Kopi+(AADK+Wiyung)/@-7.3107779,112.6789676,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7fda92cfb0eb5:0x9f52c3ac62cb83b6!8m2!3d-7.3107779!4d112.6815425!16s%2Fg%2F11kqrj3cqc?entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoASAFQAw%3D%3D" class="list-group-item list-group-item-action list-group-item-warning">Ada Apa Dengan Kopi (AADK) - Wiyung</a>
+                    <a href="https://www.google.com/maps/place/Female+Daily+Studio/@-7.339097,112.726075,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7fbb2bae2b2d9:0x2f086ed54a1d6bb7!8m2!3d-7.339097!4d112.7286499!16s%2Fg%2F11tf530nrx?entry=tts" class="list-group-item list-group-item-action list-group-item-warning">Female Daily Studio</a>
+                </div>
+            </div>
+            
+            <div class="col-3">
+                <img src="tempat3.jfif" class="img-fluid img-fixed" alt="tempat3"><br><br>
+                <img src="tempat4.jfif" class="img-fluid img-fixed" alt="tempat4">
+            </div>
+        </div>
+     </div>
+
+    <!-- Footer -->
+    <nav class="navbar fixed-bottom" style="background-color: #f6c36d;">
+        <div class="container-fluid justify-content-center">
+          <span class="navbar-text text-center">
+            @2025 Copyright:NabilahLiandaP
+          </span>
+        </div>
+      </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
