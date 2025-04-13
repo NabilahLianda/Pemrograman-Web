@@ -1,4 +1,3 @@
-udah aku perbarui jadi:
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -215,7 +214,7 @@ udah aku perbarui jadi:
     <!--- Script Form Event -->
     <script>
         const formE = document.getElementById('formEvent');
-        const scriptURLE = 'https://script.google.com/macros/s/AKfycbxwNyoYVnsOeFp1knGVjtIBtc7afqEmr3bdDn0GRHKx-Lu7s_MBMV_ppZKOOR273yrt4Q/exec';
+        const scriptURLE = 'https://script.google.com/macros/s/AKfycbw9MRTUi96VlI3O3PbOPQpe7fPaj2QpgVYQvF454qHvJ6tBH-6ZEaahWiKJVswYr6GoDQ/exec';
       
         formE.addEventListener('submit', async (e) => {
           e.preventDefault();
@@ -243,7 +242,7 @@ udah aku perbarui jadi:
             formData.append("buktiType", file.type);
       
             try {
-              const response = await fetch(scriptURL, {
+              const response = await fetch(scriptURLE, {
                 method: 'POST',
                 body: formData 
               });
@@ -251,7 +250,7 @@ udah aku perbarui jadi:
               const result = await response.json();
               if (result.status === "success") {
                 alert("Request berhasil dikirim!");
-                form.reset();
+                formE.reset();
               } else {
                 alert("Gagal mengirim request.");
               }
