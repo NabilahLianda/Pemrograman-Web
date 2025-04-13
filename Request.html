@@ -1,3 +1,4 @@
+udah aku perbarui jadi:
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,23 +58,23 @@
             Took a photo at our booth and want the digital version? Simply fill out the form below with your details, and we'll send the soft copy of your photo to your email or preferred contact.</p><br>
     
         <div class="row">
-            <!-- Form Mandiri -->
+            <!-- Form Individu -->
             <div class="col-md-6">
-                <h4 class="text-center"><i>- Formulir Mandiri -</i></h4>
-                <form>
+                <h4 class="text-center"><i>- Formulir Individu -</i></h4>
+                <form id="formIndividu">
                     <div class="mb-3">
                         <label for="namaInput" class="form-label"><b>Nama</b></label>
-                        <input type="text" class="form-control" id="namaInput" placeholder="Your Answer" required>
+                        <input type="text" class="form-control" id="namaInput" name="namaI" placeholder="Your Answer" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="tanggalInput" class="form-label"><b>Tanggal Foto</b></label>
-                        <input type="date" class="form-control" id="tanggalInput" required>
+                        <input type="date" class="form-control" id="tanggalInput" name="tanggalI" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="exampleSelect" class="form-label"><b>Cabang Photomatics</b></label>
-                        <select class="form-select" id="cabangSelect" required>
+                        <select class="form-select" id="cabangSelect" name="cabangI" required>
                           <option value="" selected disabled>Pilih Cabang</option>
                           <option value="1">Photomatics Wonderland (Jakarta)</option>
                           <option value="2">Trans Studio Mall Cibubur (Jakarta)</option>
@@ -88,7 +89,7 @@
                       
                     <div class="mb-3">
                         <label for="jenisSelect" class="form-label"><b>Jenis Box Foto</b></label>
-                        <select class="form-select" id="jenisSelect" required>
+                        <select class="form-select" id="jenisSelect" name="jenisI" required>
                             <option value="" selected disabled>Pilih Jenis</option>
                             <option value="1">Box Biasa</option>
                             <option value="2">Curtain</option>
@@ -99,12 +100,12 @@
     
                     <div class="mb-3">
                         <label for="emailInput" class="form-label"><b>Email (Untuk Pengiriman Soft File)</b></label>
-                        <input type="email" class="form-control" id="emailInput" placeholder="Pastikan Email Tidak Full" required>
+                        <input type="email" class="form-control" id="emailInput" name="emailI" placeholder="Pastikan Email Tidak Full" required>
                     </div>
     
                     <div class="mb-3">
                         <label for="BuktiInput" class="form-label"><b>Bukti Foto Strip</b></label>
-                        <input class="form-control" type="file" id="BuktiInput" required>
+                        <input class="form-control" type="file" id="BuktiInput" name="buktiI" required>
                     </div>
     
                     <button type="submit" class="btn" style="background-color: #992e14; color: white;">Submit</button>
@@ -114,30 +115,30 @@
             <!-- Form Event -->
             <div class="col-md-6">
                 <h4 class="text-center"><i>- Formulir Event -</i></h4>
-                <form>
+                <form id="formEvent">
                     <div class="mb-3">
                         <label for="eventInputE" class="form-label"><b>Nama Event</b></label>
-                        <input type="text" class="form-control" id="eventInputE" placeholder="Your Answer" required>
+                        <input type="text" class="form-control" id="eventInputE" name="namaE" placeholder="Your Answer" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="tanggalInputE" class="form-label"><b>Tanggal Event</b></label>
-                        <input type="date" class="form-control" id="tanggalInputE" required>
+                        <input type="date" class="form-control" id="tanggalInputE" name="tanggalE" required>
                       </div>
     
                     <div class="mb-3">
                         <label for="lokasiInputE" class="form-label"><b>Lokasi Box Foto</b></label>
-                        <input type="text" class="form-control" id="lokasiInputE" placeholder="Your Answer" required>
+                        <input type="text" class="form-control" id="lokasiInputE" name="lokasiE" placeholder="Your Answer" required>
                     </div>
     
                     <div class="mb-3">
                         <label for="emailInputE" class="form-label"><b>Email (Untuk Pengiriman Soft File)</b></label>
-                        <input type="email" class="form-control" id="emailInputE" placeholder="Pastikan Email Tidak Full" required>
+                        <input type="email" class="form-control" id="emailInputE" name="emailE" placeholder="Pastikan Email Tidak Full" required>
                     </div>
     
                     <div class="mb-3">
                         <label for="BuktiInputE" class="form-label"><b>Bukti Foto Strip</b></label>
-                        <input class="form-control" type="file" id="BuktiInputE" required>
+                        <input class="form-control" type="file" id="BuktiInputE" name="buktiE" required>
                     </div>
     
                     <button type="submit" class="btn" style="background-color: #992e14; color: white;">Submit</button>
@@ -145,7 +146,6 @@
             </div>
         </div>
     </div>
-    
     
     <!-- Footer -->
     <nav class="navbar fixed-bottom" style="background-color: #f6c36d;">
@@ -157,5 +157,112 @@
       </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
+    <!--- Script Form Individu -->
+    <script>
+        const form = document.getElementById('formIndividu');
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwMswLtJEObotEIE3iZaRDT2xXb1sJyWvT0huxqub1621RPVbHGrtfLLpgdfdFTkksp/exec';
+      
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+      
+          const fileInput = document.getElementById('BuktiInput');
+          const file = fileInput.files[0];
+      
+          if (!file) {
+            alert("Mohon upload bukti foto.");
+            return;
+          }
+      
+          const reader = new FileReader();
+      
+          reader.onload = async function () {
+            const base64File = reader.result.split(',')[1];
+      
+            const formData = new FormData();
+            formData.append("namaI", document.getElementById('namaInput').value);
+            formData.append("tanggalI", document.getElementById('tanggalInput').value);
+            formData.append("cabangI", document.getElementById('cabangSelect').value);
+            formData.append("jenisI", document.getElementById('jenisSelect').value);
+            formData.append("emailI", document.getElementById('emailInput').value);
+            formData.append("buktiI", base64File);
+            formData.append("buktiNama", file.name);
+            formData.append("buktiType", file.type);
+      
+            try {
+              const response = await fetch(scriptURL, {
+                method: 'POST',
+                body: formData // jangan set header Content-Type biar browser auto
+              });
+      
+              const result = await response.json();
+              if (result.status === "success") {
+                alert("Request berhasil dikirim!");
+                form.reset();
+              } else {
+                alert("Gagal mengirim request.");
+              }
+            } catch (error) {
+              console.error("Upload error:", error);
+              alert("Terjadi kesalahan saat mengirim request: " + error);
+            }
+          };
+      
+          reader.readAsDataURL(file);
+        });
+      </script>     
+      
+    <!--- Script Form Event -->
+    <script>
+        const formE = document.getElementById('formEvent');
+        const scriptURLE = 'https://script.google.com/macros/s/AKfycbxwNyoYVnsOeFp1knGVjtIBtc7afqEmr3bdDn0GRHKx-Lu7s_MBMV_ppZKOOR273yrt4Q/exec';
+      
+        formE.addEventListener('submit', async (e) => {
+          e.preventDefault();
+      
+          const fileInput = document.getElementById('BuktiInputE');
+          const file = fileInput.files[0];
+      
+          if (!file) {
+            alert("Mohon upload bukti foto.");
+            return;
+          }
+      
+          const reader = new FileReader();
+      
+          reader.onload = async function () {
+            const base64File = reader.result.split(',')[1];
+      
+            const formData = new FormData();
+            formData.append("namaE", document.getElementById('eventInputE').value);
+            formData.append("tanggalE", document.getElementById('tanggalInputE').value);
+            formData.append("lokasiE", document.getElementById('lokasiInputE').value);
+            formData.append("emailE", document.getElementById('emailInputE').value);
+            formData.append("buktiE", base64File);
+            formData.append("buktiNama", file.name);
+            formData.append("buktiType", file.type);
+      
+            try {
+              const response = await fetch(scriptURL, {
+                method: 'POST',
+                body: formData 
+              });
+      
+              const result = await response.json();
+              if (result.status === "success") {
+                alert("Request berhasil dikirim!");
+                form.reset();
+              } else {
+                alert("Gagal mengirim request.");
+              }
+            } catch (error) {
+              console.error("Upload error:", error);
+              alert("Terjadi kesalahan saat mengirim request: " + error);
+            }
+          };
+      
+          reader.readAsDataURL(file);
+        });
+      </script>
 </body>
 </html>
