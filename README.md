@@ -4,13 +4,17 @@ PhotomaticsID is a digital photo booth service platform that allows users to acc
 ## 📁 Key Files
 Here are some important files included in this repository:
 
-| File             | Description                                      |
-|------------------|--------------------------------------------------|
-| `Contact.html`   | Contact form page for customer support           |
-| `Gallery.html`   | Displays a photo gallery                         |
-| `Location.html`  | Shows booth locations using Google Maps API      |
-| `Foto1.jpg` - `Foto3.jpg` | Sample photo files                      |
-| `Logo.webp`      | Application logo                                 |
+| File             | Description                                          |
+|------------------|------------------------------------------------------|
+| `index.html`     | Main entry point (previously `Homepage.html`)        |
+| `Gallery.html`   | Displays the photo gallery                           |
+| `Contact.html`   | Contact form page for customer support               |
+| `Location.html`  | Shows booth locations using Google Maps API          |
+| `Request.html`   | Handles customer photo requests via a form           |
+| `Review.html`    | Review and rating page                               |
+| `Foto1.jpg` - `Foto3.jpg` | Sample photo files                          |
+| `Logo.webp`      | Application logo                                     |
+| `strip.jpeg`, `*.jiff`, `tempat*.jiff` | Supporting photo assets         |
 
 ## 🧩 Features
 - ✅ Contact system for customer inquiries
